@@ -1,0 +1,57 @@
+\section{Introducción}
+
+\noindent En esta sección se coloca la introducción a la temática abordada por primera vez en el abstract. Introduce los conceptos a tratar en un enfoque teórico y señala los elementos que serán empleados para el desarrollo experimental del reporte o trabajo. Nota que este párrafo no está indentado. Si quieres quitar el indentado manualmente, con noindent puedes hacerlo.
+
+\section{Metodología de la práctica}
+
+En esta sección se pueden introducir la forma de trabajo que se empleará para realizar las actividades experimentales a realizar en la práctica. Si no requieres esta sección, puedes eliminarla, o bien, modificarla para que se amolde a tus necesidades.
+
+Si necesitas ecuaciones en una línea separada sin numerar, puedes usar esto:
+
+$$s_f=s_0+v_0t+\frac{1}{2}at^2$$
+
+o las puedes escribir en línea de esta forma: $v_f^2=v_i^2+2a\Delta s$ o $\xi$.
+
+\section{Experimentos}
+
+Aquí puedes colocar cada uno de los experimentos que realizaste para la elaboración de tu práctica, trabajo, o proyecto. Aquí tienes un ejemplo de como colocar una imagen. No te tienes que preocupar por enumerarlas, ¡LaTeX ya lo hace por ti! Las puedes citar en cualquier parte como [\ref{exemploLabel}].
+
+\begin{figure}[h!]
+    \centering
+    %Modificando los parámetros de height puedes cambiar el tamaño de tu imagen.
+    \includegraphics[height=9cm]{Imágenes/DummyExp.jpg}
+    \caption{\textit{Simón profe, si le entendimos a la práctica.}}
+    \label{exemploLabel}
+    \end{figure}
+
+\section{Resultados}
+
+Aquí puedes poner todos los resultados que obtuviste, incluyendo tablas, gráficos, dibujos o esquemas. Aquí abajo tienes como ejemplo una tabla con LaTeX. Puedes crearlas con generadores online, o si se te complica, lo más fácil es hacerlas en Excel y solo capturar la imagen para incluirla como el ejemplo anterior. 
+
+\begin{table}[ht]
+\begin{center}
+\caption{Todas las tablas necesitan un pie de foto en la parte superior. Fijate en la consistencia de los valores de las tablas. No olvides tus unidades.}
+\label{table1} 
+\begin{tabular}{ccc} %change to cc for 2 columns
+\hline
+\multicolumn{1}{c}{Distance, $d$ (km) } & \multicolumn{1}{c}{Voltage, $V\ (\pm 0.05$ V)} & \multicolumn{1}{c}{Current, $I$\ (mA $\pm 5$\%)}\\
+\hline
+1.2 $\pm$ 0.2 &  0.30 & 20 \\
+1.6 $\pm$ 0.4 &  0.21 & 30 \\
+2.5 $\pm$ 0.1 &  0.18 & 40 \\
+5.9 $\pm$ 0.2 &  0.13 & 50 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\section{Conclusion}
+Finalmente, aquí puedes poner tus conclusiones, sean individuales o por equipo. Si son por equipo, una forma fácil de hacerlo es con una lista itemize:
+
+\begin{itemize}
+  \item \textbf{Nombre 1:} si me gustó la práctica jsjs.
+
+  \item \textbf{Nombre 1:} no me gustó la práctica :(
+
+\end{itemize}

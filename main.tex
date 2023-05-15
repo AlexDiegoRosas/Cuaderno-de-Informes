@@ -1,0 +1,107 @@
+% Inicio del preámbulo
+
+\documentclass[letterpaper,12pt]{article} %Modifica el tipo de documento y el tamaño de la letra.
+\usepackage[utf8]{inputenc} %Formato UTF-8 para caracteres especiales.
+\usepackage[shortlabels]{enumitem}
+\usepackage[spanish,mexico]{babel} 
+\usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[rflt]{floatflt}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr} %Paquete para el header y el formato de la portada. No sugiero borrarlo!
+\usepackage{float}
+\usepackage{longtable,multirow,booktabs}
+\usepackage{cite}
+\usepackage{wrapfig}
+\usepackage[square,numbers]{natbib}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage[]{sidecap}
+\usepackage{adjustbox}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage[]{xcolor}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+%Fin de Préambulo
+% Variables del documento
+% Document Variables 
+\newcommand{\myMateria}{CUADERNO DE INFORMES}
+\newcommand{\myGrupo}{K}
+\newcommand{\mySemester}{2023-10}
+\newcommand{\MyReport}{Manejo de la Interfaz de Unity 3D}
+\newcommand{\myUnidad}{I}
+\newcommand{\myDate}{15 de mayo de 2023}
+\newcommand{\myName}{Alex Diego Rosas Quispe}
+\newcommand{\myTeacher}{Norman Patrick Harvey Arce}
+
+
+
+%Inicio formato de Página. 
+
+\textheight = 21cm %Medidas de la  página
+\textwidth = 18cm  %Medidas de la página
+\topmargin = -2cm  %Medidas de la página    
+\oddsidemargin = -0.8cm %Medidas de la página
+\pagestyle{fancy} %Diseño de la página
+
+\fancyhf{}
+\lhead{\myMateria}%%LeftHead
+\chead{\includegraphics[ height=1cm]{Imágenes/senati.png}}%%CenterHead
+%\lfoot{USM}
+\rhead{Unidad \myUnidad}%%RightHead
+
+\setlength{\columnsep}{4mm}%Comandos para el formato de la página.
+%\setlength{\parindent}{4em}%Sangría al comenzar un nuevo párrafo.
+\setlength{\parindent}{0.5in}
+%\setlength{\parindent}{4em}%Sangría al comenzar un nuevo párrafo.
+\setlength{\parskip}{1em}%Distancia entre párrafos.
+\renewcommand{\baselinestretch}{1.0}% Espacio entre línea y línea o interlineado.
+\setlength{\headheight}{33pt}
+\fancyfoot[C,CO]{\thepage} %Logo de LaTeX y pie de página.
+
+%Fin formato de Página
+
+%Aquí inicia el documento.
+
+\begin{document}
+
+    %LaTeX te hace el índice automáticamente conforme añades secciones en tu documento.
+    \input{portada.tex}
+    \newpage
+%Inicio parte opcional. Esta parte la puedes quitar si deseas, es por si te piden formatos para
+%evidencias de certificación de los laboratorios con números de cuenta o te piden abstracts en tus %trabajos.
+
+% \title{\myMateria \\\textbf{\MyReport} \\ } 
+\author{ \normalsize{\texttt{\myName}} }
+% \date{\myDate}
+% \maketitle
+\thispagestyle{fancy}
+
+
+%Fin parte opcional
+\include{datos}
+\include{instrucciones}
+\include{informe-semanal}
+\include{informe-tarea}
+\include{diagrama}
+\include{calificacion}
+\include{contraportada}
+
+
+% \nocite{*}
+% \bibliographystyle{apalike}
+% \bibliography{Libros.bib}
+
+
+%Pequeño disclaimer por si usas fotos con derechos de autor que sacaste de Internet. Nunca está de más. 
+%\centering \small Los créditos de las fotografías pertenecen a sus respectivos autores.
+%
+% \centering\vspace*{\fill} 
+\end{document}
+
+ %Fin del documento.
